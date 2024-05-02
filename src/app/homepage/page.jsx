@@ -199,7 +199,7 @@ function page() {
                   <Image
                     src={i1}
                     alt=""
-                    className="h-[120px] w-[167px] rounded-[12px]"
+                    className="h-[120px] w-[167px] rounded-[12px] "
                   />
                 </SwiperSlide>
                 <SwiperSlide>
