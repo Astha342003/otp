@@ -44,3 +44,18 @@ body {
 {
   box-shadow: 0px 4px 0px 0px #8177AD;
 }
+.boxShadow{
+  box-shadow: 0px 6px 0px 0px #8177AD;
+}
+.card{
+  background-image: url("/images/lines.png");
+  background-size: cover;
+  box-shadow: 0px 4px 0px 0px #454545;
+}
+.shadow-inset
+{
+  box-shadow: 5px 5px 5px 0px #1F540F66 inset;
+}
+.swiper{
+width: 100%;
+}
