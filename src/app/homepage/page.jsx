@@ -21,11 +21,18 @@ import i7 from "/public/images/7.png";
 import i8 from "/public/images/8.png";
 import i9 from "/public/images/9.png";
 
+import Welcome from "../../components/welcome";
+import Slider1 from "../../components/slider1";
+import Buttons from "../../components/buttons";
+import Gdooo from "../../components/gdooo";
+import Slider234 from "../../components/slider234";
+import Navbar from "../../components/navbar";
+
 function page() {
   return (
     <div className="container">
       <div className="grid gap-8">
-        <div className="flex flex-row justify-between pt-[76px] pl-[20px] pr-[19px] items-baseline ">
+        {/* <div className="flex flex-row justify-between pt-[76px] pl-[20px] pr-[19px] items-baseline ">
           <div className="text-[28px] font-bold ">Aries, Welcome to Gdooo</div>
           <button>
             <svg
@@ -44,8 +51,9 @@ function page() {
               />
             </svg>
           </button>
-        </div>
-        <div className="swiper flex flex-row gap-2 ">
+        </div> */}
+        <Welcome/>
+        {/* <div className="swiper flex flex-row gap-2 ">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={8}
@@ -65,9 +73,9 @@ function page() {
               <Image src={Img} alt="" width={354} height={139} />
             </SwiperSlide>
           </Swiper>
-        </div>
-
-        <div className="px-5 flex flex-row justify-between items-center ">
+        </div> */}
+        <Slider1/>
+        {/* <div className="px-5 flex flex-row justify-between items-center ">
           <div className="grid gap-3">
             <button className="bg-[#9F8CF0] h-[68px] w-[68px] boxShadow flex justify-center items-center rounded-xl">
               <svg
@@ -151,9 +159,9 @@ function page() {
             </button>
             <p className="text-[12px] flex justify-center">Membership</p>
           </div>
-        </div>
-
-        <div>
+        </div> */}
+        <Buttons/>
+        {/* <div>
           <div className="px-[23px]">
             <div
               src={IMG}
@@ -181,10 +189,10 @@ function page() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="gap-6 grid pb-[95px]">
-          <div className="gap-4 grid">
+        </div> */}
+        <Gdooo/>
+        {/* <div className="gap-6 grid pb-[95px]">
+          <div className="gap-4  grid">
             <p className="font-semibold pl-5 text-[20px]">Visit Popup Store</p>
             <div className="swiper flex flex-row gap-2 ">
               <Swiper
@@ -291,10 +299,11 @@ function page() {
               </Swiper>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Slider234 />
       </div>
 
-      <div className="fixed bottom-0 z-10 min-w-[390px]">
+      {/* <div className="fixed bottom-0 z-10 min-w-[390px]">
         <div className="relative flex justify-center items-baseline ">
           <button className="absolute p-3 bg-black rounded-full flex items-center justify-center top-[-21px]">
             <svg
@@ -407,8 +416,8 @@ function page() {
             </p>
           </div>
         </div>
-      </div>
-      <div></div>
+      </div> */}
+     <Navbar/>
     </div>
   );
 }
